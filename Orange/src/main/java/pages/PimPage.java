@@ -14,7 +14,7 @@ import java.util.List;
 
 public class PimPage {
     WebDriver driver;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/div/div/input")
+    @FindBy(xpath = "(//input[@placeholder])[2]")
     WebElement employeeNameTextBox;
     @FindBy(className = "orangehrm-left-space")
     WebElement buttonSearch;
@@ -24,7 +24,7 @@ public class PimPage {
     //List<WebElement> dataElement;
     //@FindBy(className = "bi-trash")
     //WebElement deleteButton;
-   @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button")
+   @FindBy(xpath = "(//button[@data-v-10d463b7])[3]")
    WebElement AddButton;
     public PimPage(WebDriver driver){
         this.driver = driver;

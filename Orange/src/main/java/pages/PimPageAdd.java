@@ -19,7 +19,7 @@ public class PimPageAdd {
     WebElement lastNameTextBox;
     @FindBy(name = "middleName")
     WebElement middleNameTextBox;
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input")
+    @FindBy(xpath = "(//input[@data-v-1f99f73c])[5]")
     WebElement employeeIdTextBox;
     @FindBy(className = "orangehrm-left-space")
     WebElement saveButton;
