@@ -26,6 +26,8 @@ public class PimPage {
     //WebElement deleteButton;
    @FindBy(xpath = "(//button[@data-v-10d463b7])[3]")
    WebElement AddButton;
+   @FindBy(className = "bi-pencil-fill")
+   WebElement editButton;
     public PimPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -57,6 +59,11 @@ public class PimPage {
     public void yesDelete(){
         WebElement deleteButton = new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.presenceOfElementLocated(By.className("oxd-button--label-danger")));
+        deleteButton.click();
+    }
+    public void editAnEmployee(){
+        WebElement deleteButton = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.presenceOfElementLocated(By.className("bi-pencil-fill")));
         deleteButton.click();
     }
 

@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 13, 2023 06:16:06 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 13, 2023 09:47:36 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -76,10 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@loginWithValidCredentials</a></li>
-					<li><a href='#'>@DeleteAnEmployee</a></li>
-					<li><a href='#'>@AddANewEmployee</a></li>
 					<li><a href='#'>@FindAnEmployee</a></li>
+					<li><a href='#'>@DeleteAnEmployee</a></li>
+					<li><a href='#'>@loginWithValidCredentials</a></li>
+					<li><a href='#'>@AddANewEmployee</a></li>
+					<li><a href='#'>@EditAnEmployee</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -122,7 +123,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>3</span> features passed</span>
+                    <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -140,7 +141,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>8</span> scenarios passed</span>
+                    <span class='strong'>9</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,7 +161,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>98</span> steps passed</span>
+                    <span class='strong'>115</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -190,7 +191,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>PIM OrangeHRM</span>
-						<span class='test-time'>Sep 13, 2023 06:16:07 PM</span>
+						<span class='test-time'>Sep 13, 2023 09:47:36 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -203,7 +204,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 01 24.780</span>
+	<span class='duration right label'>00 01 23.494</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Adding a new employee</div>
 	</div>
@@ -424,34 +425,118 @@
 		</li>
 	</ul>
 </div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='51'>
-					<div class='test-heading'>
-						<span class='test-name'>DashBoard OrangeHRM</span>
-						<span class='test-time'>Sep 13, 2023 06:17:32 PM</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+<div class='scenario node' test-id='51' status='pass'>
+
+	<span class='duration right label'>00 00 27.623</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Editing an employee</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@EditAnEmployee</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='52' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CommonSteps.goToSauceDemoPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</div>
+
+
+		</li>
+		<li test-id='53' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.setUserName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</div>
+
+
+		</li>
+		<li test-id='54' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.setPassword(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</div>
+
+
+		</li>
+		<li test-id='55' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.clickOnLoginButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</div>
+
+
+		</li>
+		<li test-id='56' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.LoginSteps.dashBoardIsDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</div>
+
+
+		</li>
+		<li test-id='57' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.DashBoardSteps.clickOnPIM())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I click on PIM</div>
+
+
+		</li>
+		<li test-id='58' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Alexander V"</div>
+
+
+		</li>
+		<li test-id='59' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimSteps.clickOnSearch())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the search button</div>
+
+
+		</li>
+		<li test-id='60' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.clickOnEditButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on edit button</div>
+
+
+		</li>
+		<li test-id='61' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.changeTheFirstName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I change the first name to "Julian"</div>
+
+
+		</li>
+		<li test-id='62' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.changeMiddleName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I change the middle name to "A"</div>
+
+
+		</li>
+		<li test-id='63' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.changeLastName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I change the last name to "M"</div>
+
+
+		</li>
+		<li test-id='64' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.changeNickName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the nickname to "Juliansito"</div>
+
+
+		</li>
+		<li test-id='65' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.clickOnSaveButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the save button to save the changes</div>
+
+
+		</li>
+		<li test-id='66' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.PimEditSteps.messageSuccessDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The message success should be displayed</div>
+
+
+		</li>
+		<li test-id='67' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnDropDown())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</div>
+
+
+		</li>
+		<li test-id='68' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnLogOut())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</div>
+
+
+		</li>
+	</ul>
 </div>
+<div class='scenario outline node' test-id='69' status='pass'>
 
-<div class='scenario outline node' test-id='52' status='pass'>
-
-	<span class='duration right label'>00 01 13.158</span>
+	<span class='duration right label'>00 01 14.843</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Looking for employees</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>name</td></tr><tr><td>Ferrufino J</td></tr><tr><td>Antonio V</td></tr><tr><td>Alexander V</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>name</td></tr><tr><td>Ferrufino J</td></tr><tr><td>Antonio V</td></tr><tr><td>Julian A</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='53' class='node scenario Pass' status='Pass'>
+		<li test-id='70' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Looking for employees</div>
 
 				<div class='category-list'>
@@ -459,53 +544,53 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='54' class='gc given Pass' status='Pass'>
+				<li test-id='71' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToSauceDemoPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</h6>
 
 				</li>
-				<li test-id='55' class='gc given Pass' status='Pass'>
+				<li test-id='72' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
 
 				</li>
-				<li test-id='56' class='gc and Pass' status='Pass'>
+				<li test-id='73' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
 
 				</li>
-				<li test-id='57' class='gc when Pass' status='Pass'>
+				<li test-id='74' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
 
 				</li>
-				<li test-id='58' class='gc then Pass' status='Pass'>
+				<li test-id='75' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.dashBoardIsDisplayed()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</h6>
 
 				</li>
-				<li test-id='59' class='gc given Pass' status='Pass'>
+				<li test-id='76' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.DashBoardSteps.clickOnPIM()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I click on PIM</h6>
 
 				</li>
-				<li test-id='60' class='gc and Pass' status='Pass'>
+				<li test-id='77' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Ferrufino J"</h6>
 
 				</li>
-				<li test-id='61' class='gc then Pass' status='Pass'>
+				<li test-id='78' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.clickOnSearch()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the search button</h6>
 
 				</li>
-				<li test-id='62' class='gc and Pass' status='Pass'>
+				<li test-id='79' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.findName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The name of "Ferrufino J" should be displayed</h6>
 
 				</li>
-				<li test-id='63' class='gc and Pass' status='Pass'>
+				<li test-id='80' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnDropDown()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</h6>
 
 				</li>
-				<li test-id='64' class='gc then Pass' status='Pass'>
+				<li test-id='81' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnLogOut()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='65' class='node scenario Pass' status='Pass'>
+		<li test-id='82' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Looking for employees</div>
 
 				<div class='category-list'>
@@ -513,53 +598,53 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='66' class='gc given Pass' status='Pass'>
+				<li test-id='83' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToSauceDemoPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</h6>
 
 				</li>
-				<li test-id='67' class='gc given Pass' status='Pass'>
+				<li test-id='84' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
 
 				</li>
-				<li test-id='68' class='gc and Pass' status='Pass'>
+				<li test-id='85' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
 
 				</li>
-				<li test-id='69' class='gc when Pass' status='Pass'>
+				<li test-id='86' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
 
 				</li>
-				<li test-id='70' class='gc then Pass' status='Pass'>
+				<li test-id='87' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.dashBoardIsDisplayed()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</h6>
 
 				</li>
-				<li test-id='71' class='gc given Pass' status='Pass'>
+				<li test-id='88' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.DashBoardSteps.clickOnPIM()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I click on PIM</h6>
 
 				</li>
-				<li test-id='72' class='gc and Pass' status='Pass'>
+				<li test-id='89' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Antonio V"</h6>
 
 				</li>
-				<li test-id='73' class='gc then Pass' status='Pass'>
+				<li test-id='90' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.clickOnSearch()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the search button</h6>
 
 				</li>
-				<li test-id='74' class='gc and Pass' status='Pass'>
+				<li test-id='91' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.findName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The name of "Antonio V" should be displayed</h6>
 
 				</li>
-				<li test-id='75' class='gc and Pass' status='Pass'>
+				<li test-id='92' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnDropDown()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</h6>
 
 				</li>
-				<li test-id='76' class='gc then Pass' status='Pass'>
+				<li test-id='93' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnLogOut()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</h6>
 
 				</li>
 			</ul>
 		</li>
-		<li test-id='77' class='node scenario Pass' status='Pass'>
+		<li test-id='94' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Looking for employees</div>
 
 				<div class='category-list'>
@@ -567,47 +652,47 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='78' class='gc given Pass' status='Pass'>
+				<li test-id='95' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.goToSauceDemoPage()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</h6>
 
 				</li>
-				<li test-id='79' class='gc given Pass' status='Pass'>
+				<li test-id='96' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setUserName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</h6>
 
 				</li>
-				<li test-id='80' class='gc and Pass' status='Pass'>
+				<li test-id='97' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.setPassword(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</h6>
 
 				</li>
-				<li test-id='81' class='gc when Pass' status='Pass'>
+				<li test-id='98' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.clickOnLoginButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</h6>
 
 				</li>
-				<li test-id='82' class='gc then Pass' status='Pass'>
+				<li test-id='99' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.LoginSteps.dashBoardIsDisplayed()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</h6>
 
 				</li>
-				<li test-id='83' class='gc given Pass' status='Pass'>
+				<li test-id='100' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.DashBoardSteps.clickOnPIM()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I click on PIM</h6>
 
 				</li>
-				<li test-id='84' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Alexander V"</h6>
+				<li test-id='101' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Julian A"</h6>
 
 				</li>
-				<li test-id='85' class='gc then Pass' status='Pass'>
+				<li test-id='102' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.PimSteps.clickOnSearch()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the search button</h6>
 
 				</li>
-				<li test-id='86' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="stepDefinitions.PimSteps.findName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The name of "Alexander V" should be displayed</h6>
+				<li test-id='103' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="stepDefinitions.PimSteps.findName(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The name of "Julian A" should be displayed</h6>
 
 				</li>
-				<li test-id='87' class='gc and Pass' status='Pass'>
+				<li test-id='104' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnDropDown()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</h6>
 
 				</li>
-				<li test-id='88' class='gc then Pass' status='Pass'>
+				<li test-id='105' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="stepDefinitions.CommonSteps.clickOnLogOut()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</h6>
 
 				</li>
@@ -615,9 +700,9 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='89' status='pass'>
+<div class='scenario node' test-id='106' status='pass'>
 
-	<span class='duration right label'>00 00 25.425</span>
+	<span class='duration right label'>00 00 25.538</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Delete an employee</div>
 	</div>
@@ -628,67 +713,67 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='90' class='node given Pass' status='Pass'>
+		<li test-id='107' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.goToSauceDemoPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</div>
 
 
 		</li>
-		<li test-id='91' class='node given Pass' status='Pass'>
+		<li test-id='108' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setUserName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</div>
 
 
 		</li>
-		<li test-id='92' class='node and Pass' status='Pass'>
+		<li test-id='109' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setPassword(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</div>
 
 
 		</li>
-		<li test-id='93' class='node when Pass' status='Pass'>
+		<li test-id='110' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.clickOnLoginButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</div>
 
 
 		</li>
-		<li test-id='94' class='node then Pass' status='Pass'>
+		<li test-id='111' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.dashBoardIsDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</div>
 
 
 		</li>
-		<li test-id='95' class='node given Pass' status='Pass'>
+		<li test-id='112' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.DashBoardSteps.clickOnPIM())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I click on PIM</div>
 
 
 		</li>
-		<li test-id='96' class='node and Pass' status='Pass'>
+		<li test-id='113' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.PimSteps.putSomethingOnEmployee(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the employee text with "Antonio V"</div>
 
 
 		</li>
-		<li test-id='97' class='node then Pass' status='Pass'>
+		<li test-id='114' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.PimSteps.clickOnSearch())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on the search button</div>
 
 
 		</li>
-		<li test-id='98' class='node and Pass' status='Pass'>
+		<li test-id='115' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.PimSteps.deleteAnEmployee())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on trash button</div>
 
 
 		</li>
-		<li test-id='99' class='node then Pass' status='Pass'>
+		<li test-id='116' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.PimSteps.yesDelete())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click in Yes, Delete</div>
 
 
 		</li>
-		<li test-id='100' class='node then Pass' status='Pass'>
+		<li test-id='117' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.PimSteps.dontFindName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The name of "Antonio V" should not be displayed</div>
 
 
 		</li>
-		<li test-id='101' class='node and Pass' status='Pass'>
+		<li test-id='118' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnDropDown())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</div>
 
 
 		</li>
-		<li test-id='102' class='node then Pass' status='Pass'>
+		<li test-id='119' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnLogOut())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</div>
 
 
@@ -697,10 +782,10 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='103'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='120'>
 					<div class='test-heading'>
 						<span class='test-name'>Login OrangeHRM</span>
-						<span class='test-time'>Sep 13, 2023 06:19:10 PM</span>
+						<span class='test-time'>Sep 13, 2023 09:51:08 PM</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -711,9 +796,9 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='104' status='pass'>
+<div class='scenario node' test-id='121' status='pass'>
 
-	<span class='duration right label'>00 00 11.301</span>
+	<span class='duration right label'>00 00 11.651</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login into Orange Web DashBoard with valid credentials</div>
 	</div>
@@ -724,37 +809,37 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='105' class='node given Pass' status='Pass'>
+		<li test-id='122' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.goToSauceDemoPage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am in orange web page</div>
 
 
 		</li>
-		<li test-id='106' class='node given Pass' status='Pass'>
+		<li test-id='123' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setUserName(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I set the user name field with "Admin"</div>
 
 
 		</li>
-		<li test-id='107' class='node and Pass' status='Pass'>
+		<li test-id='124' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.setPassword(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I set the password field with "admin123"</div>
 
 
 		</li>
-		<li test-id='108' class='node when Pass' status='Pass'>
+		<li test-id='125' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.clickOnLoginButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on the login button</div>
 
 
 		</li>
-		<li test-id='109' class='node then Pass' status='Pass'>
+		<li test-id='126' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.LoginSteps.dashBoardIsDisplayed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then The DashBoard should be displayed</div>
 
 
 		</li>
-		<li test-id='110' class='node and Pass' status='Pass'>
+		<li test-id='127' class='node and Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnDropDown())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on drop down</div>
 
 
 		</li>
-		<li test-id='111' class='node then Pass' status='Pass'>
+		<li test-id='128' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(stepDefinitions.CommonSteps.clickOnLogOut())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I click on logout button</div>
 
 
@@ -805,14 +890,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@loginWithValidCredentials</span>
+						<span class='category-name'>@FindAnEmployee</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -827,8 +912,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2023 06:19:10 PM</td>
-										<td class='linked' test-id='104'>Login into Orange Web DashBoard with valid credentials</td>
+										<td>Sep 13, 2023 09:49:27 PM</td>
+										<td class='linked' test-id='70'>Looking for employees</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 13, 2023 09:49:53 PM</td>
+										<td class='linked' test-id='82'>Looking for employees</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 13, 2023 09:50:17 PM</td>
+										<td class='linked' test-id='94'>Looking for employees</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -860,8 +955,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2023 06:18:45 PM</td>
-										<td class='linked' test-id='89'>Delete an employee</td>
+										<td>Sep 13, 2023 09:50:42 PM</td>
+										<td class='linked' test-id='106'>Delete an employee</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@loginWithValidCredentials</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 13, 2023 09:51:08 PM</td>
+										<td class='linked' test-id='121'>Login into Orange Web DashBoard with valid credentials</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -893,17 +1021,17 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2023 06:16:07 PM</td>
+										<td>Sep 13, 2023 09:47:36 PM</td>
 										<td class='linked' test-id='3'>Adding a new employee</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 13, 2023 06:16:42 PM</td>
+										<td>Sep 13, 2023 09:48:08 PM</td>
 										<td class='linked' test-id='19'>Adding a new employee</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Sep 13, 2023 06:17:07 PM</td>
+										<td>Sep 13, 2023 09:48:34 PM</td>
 										<td class='linked' test-id='35'>Adding a new employee</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
@@ -914,14 +1042,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@FindAnEmployee</span>
+						<span class='category-name'>@EditAnEmployee</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -936,18 +1064,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 13, 2023 06:17:32 PM</td>
-										<td class='linked' test-id='53'>Looking for employees</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Sep 13, 2023 06:17:56 PM</td>
-										<td class='linked' test-id='65'>Looking for employees</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Sep 13, 2023 06:18:20 PM</td>
-										<td class='linked' test-id='77'>Looking for employees</td>
+										<td>Sep 13, 2023 09:49:00 PM</td>
+										<td class='linked' test-id='51'>Editing an employee</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -972,37 +1090,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>98</div>
+					<div class='panel-lead'>115</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 13, 2023 06:16:06 PM</div>
+					<div class='panel-lead'>Sep 13, 2023 09:47:36 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 13, 2023 06:19:21 PM</div>
+			 		<div class='panel-lead'>Sep 13, 2023 09:51:20 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 03 15.373</div>
+					<div class='panel-lead'>00 03 44.115</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1018,8 +1136,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@loginWithValidCredentials</td>
-							<td>1</td>
+							<td>@FindAnEmployee</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1028,6 +1146,15 @@
 						</tr>
 						<tr>
 							<td>@DeleteAnEmployee</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@loginWithValidCredentials</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1045,8 +1172,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@FindAnEmployee</td>
-							<td>3</td>
+							<td>@EditAnEmployee</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1064,23 +1191,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 3,
-				passParent: 3,
+                parentCount: 2,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 8,
-				passChild: 8,
+				childCount: 9,
+				passChild: 9,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 98,
-				passGrandChild: 98,
+				grandChildCount: 115,
+				passGrandChild: 115,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -1092,7 +1219,7 @@
 		
 		<script>
 			var timeline = {
-			        "PIM OrangeHRM":84.784,"DashBoard OrangeHRM":98.587,"Login OrangeHRM":11.301
+			        "PIM OrangeHRM":211.544,"Login OrangeHRM":11.651
 			};
 		</script>
 		
